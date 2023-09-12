@@ -27,7 +27,11 @@ class MainActivity : AppCompatActivity() {
                 intentTosecac.putExtra(EXTRA_NAME,edtName.text.toString())
                 startActivity(intentTosecac)
             }
-            btn_sendmsg.setOnClickListener{}
+            btn_sendmsg.setOnClickListener{
+                val intent=Intent(Intent.ACTION_SEND)
+                intent.type="text/plain"
+                intent.putExtra(intent.EXTRA_TEXT,)
+            }
         }
         Log.d(TAG,"onCreate:dipanggil")
     }
